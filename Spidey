@@ -20,4 +20,4 @@ async def on_ready():
     print("Cueh v{} ready".format(settings.version))
  
  
-client.run(NTg4MDIxMDkzNDE2MTczNjAx.XP_anQ.h_WB14jRT2CEo33ZFNnTFftroRY)
+client.run(NTg4MDIxMDkzNDE2MTczNjAx.XP_a8A.e-HEJU5RQKMiBsWvNXUMKg7GqD0)
