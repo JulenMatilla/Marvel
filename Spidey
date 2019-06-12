@@ -1,23 +1,30 @@
-import discord
- 
- 
- 
-client = discord.Client()
- 
-token=
- 
-@client.event
-async def on_message(message):
-    if(message.author == client.user):
-        return
-    if message.content.startswith('!cueh'):
-        msg = 'Cueh para ti, {0.author.mention}'.format(message)
-        await client.send_message(message.channel, msg, tts=True)
- 
- 
-@client.event
-async def on_ready():
-    print("Cueh v{} ready".format(settings.version))
- 
- 
-client.run(NTg4MDIxMDkzNDE2MTczNjAx.XP_a8A.e-HEJU5RQKMiBsWvNXUMKg7GqD0)
+const Discord = require("discord.js");
+const client = new Discord.Client();
+const config = require("./config.json");
+const  token = "NTg4MDIxMDkzNDE2MTczNjAx.XP_ttA.HylXsboa2jS7lUy6bA6fIGv4ZEE";
+const prefix = "%";
+const IdOwner = "374296770441773057";
+
+client.on("ready", () => {
+
+    console.log("Estoy listo!");
+
+});
+
+client.on("message", (message) => {
+
+  if (message.content.startsWith(prefix + "ping")) {
+
+      message.channel.send("pong!");
+  }
+
+  if (message.content.startsWith(prefix + "puto")) {
+
+      message.channel.send("negro!");
+  }
+
+
+
+});
+
+client.login("NTg4MDIxMDkzNDE2MTczNjAx.XP_ttA.HylXsboa2jS7lUy6bA6fIGv4ZEE");
